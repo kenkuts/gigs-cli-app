@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
+require './lib/gigs'
 
-require 'lib/gigs'
-
-Concerts.new.call
+# Concerts.new.call
+Gigs::CLI.new.call

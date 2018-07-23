@@ -1,19 +1,28 @@
+require 'selenium-webdriver'
 require 'nokogiri'
-require 'open-uri'
 require 'pry'
 
 class Scraper
   def self.scrape_site(band)
     band.gsub!(" ", "-")
+    band_page = "http://www.bigstub.com/#{band}-tickets.aspx"
+    driver = Selenium::WebDriver.for :chrome
+    driver.get band_page
+    wait = Selenium::WebDriver::Wait.new(:timeout => 5)
 
-    doc = Nokogiri::HTML(open("http://www.bigstub.com/#{band}-tickets.aspx"))
+    wait.until {
+    /title-holder/.match(driver.page_source)
+    }
+
+    doc = Nokogiri::HTML(driver.page_source)
+
     doc.css("div#upcomingEventsList div.item2").each do |info|
-      puts "Artist: #{info.css("div.item-body div.title-holder h3 a").text}"
-      puts "Venue: #{info.css("div.item-body div.title-holder strong.title").text}"
-      puts "Time: #{info.css("div.ueDate").text.strip}"
-      puts "Date: #{info.css("div.ueDate span.midline1").text}"
       puts "======================================================================"
+      puts "Artist: #{info.css('div.title-holder h3 a').text}"
+      puts "Venue: #{info.css('div.title-holder strong.title').text}"
+      puts "Date: #{info.css('div.ueDate span.midline1').text}"
     end
+    driver.quit
   end
 end
 

@@ -6,10 +6,10 @@ require "gigs/version"
 Gem::Specification.new do |spec|
   spec.name          = "gigs"
   spec.version       = Gigs::VERSION
-  spec.authors       = ["kenkuts"]
+  spec.authors       = ["Kenneth R. Kutschera"]
   spec.email         = ["kennethchoi19@gmail.com"]
 
-  spec.summary       = %q{This gem generates a list og tour dates to where your favorite band,artist or DJ is going to perform.}
+  spec.summary       = %q{This gem generates a list of tour dates to where your favorite band,artist or DJ is going to perform.}
   spec.description   = %q{}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
 
@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "nokogiri"
+  spec.add_development_dependency "selenium"
 end
