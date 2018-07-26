@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 require './lib/gigs'
 
-# Concerts.new.call
 Gigs::CLI.new.run

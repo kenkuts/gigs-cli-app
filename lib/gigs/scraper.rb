@@ -1,7 +1,3 @@
-require 'selenium-webdriver'
-require 'nokogiri'
-require 'pry'
-
 class Scraper
   def self.scrape_site(band)
     band.gsub!(" ", "-")
@@ -19,11 +15,16 @@ class Scraper
 
     concerts = []
     doc.css("div#upcomingEventsList div.item2").each do |info|
+      artist = info.css('div.title-holder h3 a').text
+      venue = info.css('div.title-holder strong.title').text
+      date = info.css('div.ueDate span.midline1').text
+
       concerts << {
-      artist: info.css('div.title-holder h3 a').text,
-      venue: info.css('div.title-holder strong.title').text,
-      date: info.css('div.ueDate span.midline1').text
+      artist: Artist.find_or_create_by_name(artist),
+      venue: Venue.find_or_create_by_name(venue),
+      date: date
     }
+    Venue.find_or_create_by_name(venue).add_date(date)
     end
     concerts
   end

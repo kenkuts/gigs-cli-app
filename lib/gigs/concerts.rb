@@ -9,12 +9,12 @@ class Concerts
 
   def self.print_concerts
     @@all.each do |data|
-      puts "==============================================="
-      puts "Artist: #{data.artist}"
-      puts "Venue: #{data.venue}"
-      puts "Date: #{data.date}"
-      puts "This is working"
+      puts "===================================================".colorize(:color => :cyan)
+      puts "Artist: #{data.artist.name}".colorize(:red)
+      puts "Venue: #{data.venue.name}".colorize(:white)
+      puts "Date: #{data.date}".colorize(:blue)
     end
+      puts "===================================================".colorize(:color => :cyan)
   end
 
 end
