@@ -19,10 +19,10 @@ class Venue
   def add_date(date)
     @dates << date unless @dates.detect { |saved_dates| saved_dates == date }
   end
-
-  def add_artist(artist)
-    @artist = artist if artist == nil
-    artist.add_venue(self)
-  end
+  # 
+  # def add_artist(artist)
+  #   @artist = artist if artist == nil
+  #   artist.add_venue(self)
+  # end
 
 end

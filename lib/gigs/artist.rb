@@ -13,13 +13,8 @@ class Artist
     @venues = []
   end
 
-  def add_venue(venue)
-    @venues << venue unless @venues.any?(venue)
-
-  end
-
-  def self.display_artists
-    all.collect { |artists| artists.name }
-  end
+  # def add_venue(venue)
+  #   @venues << venue unless @venues.any?(venue)
+  # end
 
 end
