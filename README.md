@@ -1,7 +1,6 @@
 # Gigs
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gigs`. To experiment with that code, run `bin/console` for an interactive prompt.
-
+Welcome to gigs! The CLI gem where you can find out if your favorite artist, or any artist, is touring or not
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
@@ -16,13 +15,10 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install gigs
+Or you can install this gem via ```gem install gigs``` on a command line. The ```gigs``` CLI will be installed and you can run ```gigs``` to get a list of any artist, band or DJ's touring schedule. 
 
 ## Usage
-
-TODO: Write usage instructions here
+Run: ```gigs``` after installing gem.
 
 ## Development
 
