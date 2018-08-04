@@ -1,7 +1,6 @@
 # Gigs
 
-Welcome to gigs! The CLI gem where you can find out if your favorite artist, or any artist, is touring or not
-TODO: Delete this and the text above, and describe your gem
+Welcome to gigs! The CLI gem where you can find out if your favorite artist, or any artist, is touring or not.
 
 ## Installation
 
