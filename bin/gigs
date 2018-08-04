@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
 require './lib/gigs'
+require 'bundler/setup'
 
 Gigs::CLI.new.run
+
+# require "irb"
+# IRB.start(__FILE__)

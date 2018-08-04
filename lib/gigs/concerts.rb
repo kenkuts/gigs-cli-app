@@ -1,6 +1,7 @@
+
 class Concerts
+
   extend Concerns::ClassMethods
-  extend Concerns::Findable
 
   attr_accessor :input, :artist, :venue, :date
   @@all = []

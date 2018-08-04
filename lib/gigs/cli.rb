@@ -3,7 +3,6 @@ class Gigs::CLI
   def run
     welcome
     scrape_data
-    goodbye
   end
 
   def welcome
@@ -80,5 +79,4 @@ class Gigs::CLI
     puts "Thank you for using Gigs! We hope to see you again!".colorize(:cyan)
     exit
   end
-
 end
