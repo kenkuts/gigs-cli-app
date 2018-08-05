@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require './lib/gigs'
+require 'gigs'
 require 'bundler/setup'
 
 Gigs::CLI.new.run

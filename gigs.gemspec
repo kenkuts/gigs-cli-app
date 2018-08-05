@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Gigs::VERSION
   spec.authors       = ["Kenneth R. Kutschera"]
   spec.email         = ["kennethchoi19@gmail.com"]
-
+  spec.licenses      = ["MIT"]
   spec.summary       = %q{This gem generates a list of tour dates to where your favorite band,artist or DJ is going to perform.}
   spec.description   = %q{}
   spec.homepage      = "https://github.com/kenkuts/gigs-cli-app"
@@ -34,7 +34,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "nokogiri"
-  spec.add_development_dependency "selenium-webdriver"
-  spec.add_development_dependency "colorize"
+  spec.add_development_dependency "nokogiri", "~> 1.8"
+  spec.add_development_dependency "selenium-webdriver", "~> 3.13"
+  spec.add_development_dependency "colorize", "~> 0.8"
+  spec.add_development_dependency "pry", "~> 0"
 end
