@@ -32,10 +32,11 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib", "lib/gigs"]
 
   spec.add_development_dependency "bundler", "~> 1.16"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 12.3.3"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "nokogiri", "~> 1.8"
+  spec.add_development_dependency "nokogiri", "~> 1.10.8"
   spec.add_development_dependency "selenium-webdriver", "~> 3.13"
   spec.add_development_dependency "colorize", "~> 0.8"
   spec.add_development_dependency "pry", "~> 0"
+  spec.add_development_dependency "rubyzip", "~> 1.3.0"
 end
