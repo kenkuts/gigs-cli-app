@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.3.3"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "nokogiri", "~> 1.10.8"
+  spec.add_development_dependency "nokogiri", "~> 1.13.6"
   spec.add_development_dependency "selenium-webdriver", "~> 3.13"
   spec.add_development_dependency "colorize", "~> 0.8"
   spec.add_development_dependency "pry", "~> 0"
